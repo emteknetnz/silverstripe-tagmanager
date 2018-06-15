@@ -1,7 +1,7 @@
 {
     "name": "sminnee/tagmanager",
     "description": "SilverStripe's server-side answer to Google/Adobe Tag Manager",
-    "type": "silverstripe-vendormodule",
+    "type": "silverstripe-module",
     "require": {
         "silverstripe/cms": "^3"
     },
@@ -14,5 +14,8 @@
             "name": "Sam Minnee",
             "email": "sam@silverstripe.com"
         }
-    ]
+    ],
+    "extra": {
+        "installer-name": "tagmanager"
+    }
 }
