@@ -1,11 +1,5 @@
 <?php
 
-namespace SilverStripe\TagManager\SnippetProvider;
-
-use SilverStripe\TagManager\SnippetProvider;
-use SilverStripe\Forms\FieldList;
-use SilverStripe\Forms;
-
 /**
  * A snippet provider that lets you add arbitrary HTML
  */

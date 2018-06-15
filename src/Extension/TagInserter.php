@@ -1,14 +1,5 @@
 <?php
 
-namespace SilverStripe\TagManager\Extension;
-
-use SilverStripe\Control\Middleware\HTTPMiddleware;
-use SilverStripe\Control\HTTPRequest;
-use SilverStripe\Control\Director;
-use SilverStripe\TagManager\Model\Snippet;
-use SilverStripe\Core\Extension;
-use SilverStripe\ORM\FieldType\DBField;
-
 /**
  * ContentController extension that inserts configured snippets
  */

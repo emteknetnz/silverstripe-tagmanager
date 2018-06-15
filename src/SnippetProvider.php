@@ -1,7 +1,5 @@
 <?php
 
-namespace SilverStripe\TagManager;
-
 /**
  * Code that can provide snippets for the tag manager should implement this interface.
  * Snippets may have user-provided parameters that are used to generate the snippet.

@@ -1,9 +1,5 @@
 <?php
 
-namespace SilverStripe\TagManager\Admin;
-
-use SilverStripe\Forms\FieldList;
-
 /**
  * Provides support for adding JSON-packed parameters into a single DataObject field
  */
