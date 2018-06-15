@@ -21,8 +21,8 @@ class HtmlSnippetProvider implements SnippetProvider
         ];
 
         return new FieldList(
-            new Forms\DropdownField("Zone", "Zone", $zones),
-            new Forms\TextAreaField("Content", "HTML Content")
+            new DropdownField("Zone", "Zone", $zones),
+            new TextAreaField("Content", "HTML Content")
         );
     }
 
@@ -34,7 +34,7 @@ class HtmlSnippetProvider implements SnippetProvider
     public function getSnippets(array $params)
     {
         if (empty($params['Zone']) || empty($params['Content'])) {
-            throw new \InvalidArgumentException("Please supply both Zone and Content");
+            throw new InvalidArgumentException("Please supply both Zone and Content");
         }
 
         return [

@@ -6,10 +6,10 @@
 class TagInserter extends Extension
 {
 
-    public function afterCallActionHandler(HTTPRequest $request, $action, DBField $response)
+    public function afterCallActionHandler(SS_HTTPRequest $request, $action)
     {
-        $response->setValue($this->insertSnippetsIntoHTML($response->getValue(), $this->owner->data()));
-        return $response;
+        $response = Controller::curr()->getResponse();
+        $response->setBody($this->insertSnippetsIntoHTML($response->getBody()));
     }
 
     protected function insertSnippetsIntoHTML($html)
